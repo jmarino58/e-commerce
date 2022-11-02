@@ -1,0 +1,34 @@
+.loggin{
+    text-align: center;
+}
+.loggin__form{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+
+.loggin__form *{
+    width:400px;
+    height:40px;
+
+}
+
+.loggin__boton{
+    color:azure;
+    background: #2A7AE4;
+}
+
+
+
+/*Mobile*/
+@media (max-width: 768px) {
+.loggin__form *{
+    width:300px;
+    
+    
+}
+    
+
+}

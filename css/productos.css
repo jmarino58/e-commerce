@@ -1,0 +1,101 @@
+.galeria__listado__boton{
+    width: 120px;
+    height: 35px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    border-radius: 20px;
+    margin-right: 20px;
+    
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    background: #2A7AE4;
+    color: #FFFFFF;
+
+
+}
+.imagenes{
+    position:relative;
+}
+
+.imagenes>img{
+    border-radius: 20px;
+    padding-top:5px;
+}
+
+.iconos{
+    position: absolute;
+    z-index:10;
+    right:15px;
+    top:15px;
+    color:#FFF;
+    
+    
+    
+}
+
+.fa{
+    padding: 0 5px;
+}
+
+.producto{
+    text-align: center;
+}
+
+
+.producto__url,.producto__categoria,.producto__nombre,.producto__precio,.producto__boton{
+    width:400px;
+    height:40px;
+    
+
+}
+.producto__descripcion{
+    width:400px;
+    height: 80px;
+    resize: none;
+
+}
+
+.producto__boton{
+    color:azure;
+    background: #2A7AE4;
+
+}
+
+.producto__form{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+
+
+/*Tablet*/
+@media (max-width: 768px) {
+    .imagenes>img{
+        width:120px;
+    }
+    
+    .galeria__encabezado{
+        align-items: center;   
+        justify-content: space-around;
+        
+    }
+    .galeria__listado__boton{
+        margin-right: 0px;
+    }
+    
+    
+    .producto__form *{
+        width:300px;
+        
+        
+    }
+}
