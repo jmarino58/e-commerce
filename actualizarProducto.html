@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="/css/style.css">
     <link rel="stylesheet" type="text/css" href="/css/productos.css">
     <script src="./js/imagen.js"></script>
+    <script type="module" src="./js/actualizarProducto.js"></script>
 </head>
 <body>
 <section>
@@ -19,7 +20,6 @@
         <input type="search" class="encabezado__buscador__texto" name="txt_buscar" id="txt_buscar" placeholder="¿Que deseas buscar?">
         <i  class="fa fa-search encabezado__buscador__imagen"></i>
         </div>
-        
         <button type="submit" class="encabezado__menu">Menu Administrador</button>
     </div>
 </section>
@@ -27,7 +27,7 @@
 <!-- Datos de Producto para carga o modificacion-->
 <section>
     <div class="producto">
-        <h2 for="" class="producto__title">Agregar nuevo producto</h2>
+        <h2 for="" class="producto__title">Actualizar Producto</h2>
             <form action="" class="producto__form" id="producto__form" method="POST" [data-producto-form]>
               <div class="producto__imagen">
                 <img src="./assets/perfil.png" alt="Imagen de Producto" id="producto__foto" class="imagenes">
@@ -37,7 +37,7 @@
                 <input type="text" class="producto__nombre" id="producto__nombre" maxlength=20 placeholder="Nombre del Producto"  required>
                 <input type="number" class="producto__precio" id="producto__precio" placeholder="Precio del Producto" required>
                 <textarea name="producto__descripcion" id="producto__descripcion" maxlength=150 class="producto__descripcion" placeholder="Descripción del producto" required></textarea>
-                <input type="submit" class="galeria__listado__boton" id="producto__boton" value="Agregar producto">
+                <input type="submit" class="galeria__listado__boton" id="producto__boton" value="Actualizar Producto">
             </form>
     </div>
 </section>

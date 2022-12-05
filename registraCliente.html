@@ -3,20 +3,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - WhitePage E-Commerce</title>
+    <title>Register - WhitePage E-Commerce</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
     
     <link rel="stylesheet" type="text/css" href="/css/style.css">
     <link rel="stylesheet" type="text/css" href="/css/loggin.css">
-
-        
-    
+    <script type="module" src="./js/app.js"></script>
 
 
 </head>
 <body>
 <section>
-    <!--Encabezado - Buscador Articulos - Login-->
+ 
     <div class="encabezado">
         <img src="/assets/logo_alurageek.png" class="encabezado__logo">
         <div class="encabezado__buscador">
@@ -24,21 +22,30 @@
         <i  class="fa fa-search encabezado__buscador__imagen"></i>
         </div>
         
-        <button id="encabezado__registro" class="encabezado__login">Registrarse</button>
     </div>
 </section>
 
-<!-- Formulario Loggin --> 
+<!-- Formulario Registro --> 
 <section>
     <div class="loggin">
-    <h2 for="" class="loggin__title">Iniciar Sesión</h2>
-        <form action="" class="loggin__form" data-accesform>
-            <input type="email" class="loggin__usuario" placeholder="Escriba su correo electrónico" data-email required>
+    <h2 for="" class="loggin__title">Registrar Nuevo Usuario</h2>
+    <form id="formulario__registro" class="flex flex--column" onsubmit="event.preventDefault();openRegistro()" data-form>
+        <div class="input-container">
+          <input name="nombre"  id="formulario__registro__nombre" class="loggin__usuario" type="text" placeholder="Nombre" required data-nombre/>
+          <span class="input--error"></span>
+        </div>
+        <div class="input-container">
+          <input name="email" id="formulario__registro__email" class="input" type="text" placeholder="email" required data-email/>
+          <span class="input--error"></span>
+        </div>
+
+        <div class="input-container">
+            <input name="password" id="formulario__registro__password" class="input" type="password" placeholder="Contraseña" required data-password/>
             <span class="input--error"></span>
-            <input type="password" class="loggin__password" placeholder="Escriba su contraseña" data-password required>
-            <span class="input--error"></span>
-            <input type="submit" class="loggin__boton" value="Entrar">
-        </form>
+        </div>
+
+        <button type="submit" class="button">Registrar</button>
+      </form>
     </div>
 </section>
 
@@ -81,18 +88,12 @@
      </div>
  
  <!-- PopUp envio Formulario-->
- <div class="formcontato__send" id="formcontato__send">
-     <img class="formcontato__send__img" alt="">
-     <h2 class="formcontato__send__text">El formulario ha sido enviado</h2>
-       <button class="formcontato__send__buttom" onclick="closePopUp()">Aceptar</button>
+ <div class="formregistro__send" id="formregistro__send">
+     <img class="formregistro__send__img" alt="">
+     <h2 class="formregistro__send__text">Usuario Registrado</h2>
+       <button class="formregistro__send__buttom" onclick="closePopUp()">Aceptar</button>
  </div>
 </section>
-
-<section class="register-card card">
-    <span class="register-card__icon-complete"></span>
-    <h1 class="register-card__title card__title">¡Registro completado!</h1>
-    <a href="./lista_cliente.html" class="button">Ver clientes</a>
-  </section>
 
 <section>
     <!--Footer-->
@@ -104,8 +105,6 @@
     </section>
 
 </section>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"></script>
-<script type="module" src="./js/app.js"></script>
 <script src="js/popup.js"></script>
 </body>
 </html>

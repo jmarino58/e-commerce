@@ -6,7 +6,11 @@
     <title>My WhitePage E-Commerce</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
     
+    
+    <script type="module" src="./js/app.js"></script>
+    <script type="module" src="./js/buscarProductos.js"></script>
     <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/loggin.css">
 </head>
 <body>
 <section>
@@ -15,7 +19,7 @@
         <img src="/assets/logo_alurageek.png" class="encabezado__logo">
         <div class="encabezado__buscador">
         <input type="search" class="encabezado__buscador__texto" name="txt_buscar" id="txt_buscar" placeholder="¿Que deseas buscar?">
-        <i  class="fa fa-search encabezado__buscador__imagen"></i>
+        <i  class="fa fa-search encabezado__buscador__imagen" id="encabezado__buscador__imagen"></i>
         </div>
         
         <button class="encabezado__login" onclick="window.location.href='./login.html'">Login</button>
@@ -27,76 +31,58 @@
     <!--Banners-->
     <div class="banners">
         <div class="banners__text__container">
-            <h2 class="banners__title">Promociones</h2>
+            <h2 class="banners__title">Consola</h2>
             <h3 class="banners__subtitle">Productos con 50% de descuento</h3>
-            <button class="banners__boton">Ver Promociones</button>
+            <button class="banners__boton" onclick="location.href='#galeria__consolas'">Ver Consolas</a></button>
         </div>
     </div>
 </section>
-
-<section>
+<section id="productos">
+<section id="galeria__starwars">
     <!--Galería de Productos StarWars-->
-    <div class="galeria">
+    <div class="galeria__starwars">
         <div class="galeria__encabezado">
         <h2 class="galeria__titulo">Star Wars</h2>
-            <a  href="" class="galeria__listado">Ver Todo<i class="fa-solid fa-arrow-right icons"></i></a>
-            
-    </div>
-        <div class="galeria__cuerpo">
+            <a  href="./listaProductos.html" class="galeria__listado">Ver Todo<i class="fa-solid fa-arrow-right icons"></i></a>
+    </div>        
+    
+        <div class="galeria__cuerpo" id="galeria__cuerpo">
             <ul class="galeria__listaproductos">
-                <li class="galeria__listaproductos__item"><label class="galeria__listaproductos__item--nombre">Producto XYZ</label><img src="/assets/starwars/starwars1.png"/><label for="" class="galeria__listaproductos__item--precio">$60.00</label><a class="galeria__listaproductos__item--descripcion">Ver producto</a></li>
-                <li class="galeria__listaproductos__item"><label class="galeria__listaproductos__item--nombre">Producto XYZ</label><img src="/assets/starwars/starwars2.png"/><label for="" class="galeria__listaproductos__item--precio">$60.00</label><a class="galeria__listaproductos__item--descripcion">Ver producto</a></li>
-                <li class="galeria__listaproductos__item"><label class="galeria__listaproductos__item--nombre">Producto XYZ</label><img src="/assets/starwars/starwars3.png"/><label for="" class="galeria__listaproductos__item--precio">$60.00</label><a class="galeria__listaproductos__item--descripcion">Ver producto</a></li>
-                <li class="galeria__listaproductos__item"><label class="galeria__listaproductos__item--nombre">Producto XYZ</label><img src="/assets/starwars/starwars4.png"/><label for="" class="galeria__listaproductos__item--precio">$60.00</label><a class="galeria__listaproductos__item--descripcion">Ver producto</a></li>
-                <li class="galeria__listaproductos__item"><label class="galeria__listaproductos__item--nombre">Producto XYZ</label><img src="/assets/starwars/starwars5.png"/><label for="" class="galeria__listaproductos__item--precio">$60.00</label><a class="galeria__listaproductos__item--descripcion">Ver producto</a></li>
-                <li class="galeria__listaproductos__item"><label class="galeria__listaproductos__item--nombre">Producto XYZ</label><img src="/assets/starwars/starwars6.png"/><label for="" class="galeria__listaproductos__item--precio">$60.00</label><a class="galeria__listaproductos__item--descripcion">Ver producto</a></li>
            </ul>
         </div>   
-    </div>    
+    </div>
+        
 </section>
 
-
-<section>
+<section id="galeria__consolas">
     <!--Galería de Productos Consolas-->
-    <div class="galeria">
+    <div class="galeria__consolas" >
         <div class="galeria__encabezado">
             <h2 class="galeria__titulo">Consolas</h2>
-            <a  href="" class="galeria__listado">Ver Todo<i class="fa-solid fa-arrow-right icons"></i></a>
+            <a  href="./listaProductos.html" class="galeria__listado">Ver Todo<i class="fa-solid fa-arrow-right icons"></i></a>
         </div>
         <div class="galeria__cuerpo">
             <ul class="galeria__listaproductos">
-                <li class="galeria__listaproductos__item"><label class="galeria__listaproductos__item--nombre">Control XYZ</label><img src="/assets/consolas/consola1.png"/><label for="" class="galeria__listaproductos__item--precio">$60.00</label><a class="galeria__listaproductos__item--descripcion">Ver producto</a></li>
-                <li class="galeria__listaproductos__item"><label class="galeria__listaproductos__item--nombre">Control y consola XYZ</label><img src="/assets/consolas/consola2.png"/><label for="" class="galeria__listaproductos__item--precio">$ 60.00</label><a class="galeria__listaproductos__item--descripcion">Ver producto</a></li>
-                <li class="galeria__listaproductos__item"><label class="galeria__listaproductos__item--nombre">Consola XYZ</label><img src="/assets/consolas/consola3.png"/><label for="" class="galeria__listaproductos__item--precio">$ 60.00</label><a class="galeria__listaproductos__item--descripcion">Ver producto</a></li>
-                <li class="galeria__listaproductos__item"><label class="galeria__listaproductos__item--nombre">Control XYZ</label><img src="/assets/consolas/consola4.png"/><label for="" class="galeria__listaproductos__item--precio">$ 60.00</label><a class="galeria__listaproductos__item--descripcion">Ver producto</a></li>
-                <li class="galeria__listaproductos__item"><label class="galeria__listaproductos__item--nombre">Consola XYZ</label><img src="/assets/consolas/consola5.png"/><label for="" class="galeria__listaproductos__item--precio">$ 60.00</label><a class="galeria__listaproductos__item--descripcion">Ver producto</a></li>
-                <li class="galeria__listaproductos__item"><label class="galeria__listaproductos__item--nombre">GameBoy Color</label><img src="/assets/consolas/consola6.png"/><label for="" class="galeria__listaproductos__item--precio">$ 60.00</label><a class="galeria__listaproductos__item--descripcion">Ver producto</a></li>
             </ul>
         </div>
     </div>    
 </section>
 
 
-<section>
+<section id="galeria__diversos">
     <!--Galería de Productos Diversos-->
-    <div class="galeria">
+    <div class="galeria__diversos" >
         <div class="galeria__encabezado"><h2 class="galeria__titulo">Diversos</h2>
-            <a  href="" class="galeria__listado">Ver Todo<i class="fa-solid fa-arrow-right icons"></i></a>
+            <a  href="./listaProductos.html" class="galeria__listado">Ver Todo<i class="fa-solid fa-arrow-right icons"></i></a>
         </div>
         <div class="galeria__cuerpo">
          <ul class="galeria__listaproductos">    
-             <li class="galeria__listaproductos__item"><label class="galeria__listaproductos__item--nombre">Camisa Atari</label><img src="/assets/diversos/diverso1.png"/><label for="" class="galeria__listaproductos__item--precio">$ 60.00</label><a  class="galeria__listaproductos__item--descripcion">Ver producto</a></li>
-             <li class="galeria__listaproductos__item"><label class="galeria__listaproductos__item--nombre">Camisa SNES</label><img src="/assets/diversos/diverso2.png"/><label for="" class="galeria__listaproductos__item--precio">$ 60.00</label><a class="galeria__listaproductos__item--descripcion">Ver producto</a></li>
-             <li class="galeria__listaproductos__item"><label class="galeria__listaproductos__item--nombre">Control y Consola XYZ</label><img src="/assets/diversos/diverso3.png"/><label for="" class="galeria__listaproductos__item--precio">$ 60.00</label><a class="galeria__listaproductos__item--descripcion">Ver producto</a></li>
-             <li class="galeria__listaproductos__item"><label class="galeria__listaproductos__item--nombre">Control y Consola XYZ</label><img src="/assets/diversos/diverso4.png"/><label for="" class="galeria__listaproductos__item--precio">$ 60.00</label><a class="galeria__listaproductos__item--descripcion">Ver producto</a></li>
-             <li class="galeria__listaproductos__item"><label class="galeria__listaproductos__item--nombre">Control y Consola XYZ</label><img src="/assets/diversos/diverso5.png"/><label for="" class="galeria__listaproductos__item--precio">$ 60.00</label><a class="galeria__listaproductos__item--descripcion">Ver producto</a></li>
-             <li class="galeria__listaproductos__item"><label class="galeria__listaproductos__item--nombre">Producto XYZ</label><img src="/assets/diversos/diverso6.png"/><label for="" class="galeria__listaproductos__item--precio">$ 60.00</label><a class="galeria__listaproductos__item--descripcion">Ver producto</a></li>
          </ul>
         </div>
     </div>    
 </section>
 
-
+</section>
 <section>
     <!--Formulario de Contacto-->
     <div class="contacto">
@@ -119,16 +105,33 @@
         </div>
         
         <div class="formulario__contacto">
-            <div class="formulario__contacto__form">
+           <!--<div class="formulario__contacto__form">-->
+        <form class="formulario__contacto__form" name="form" id="form" onsubmit="event.preventDefault();openPopUp()" method="POST">
                 <h3 class="formulario__contacto__titulo">Hable con nosotros</h3>
-                <input type="text" class="formulario__contacto__nombre" placeholder="Nombre">
-                <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="formulario__contacto__mensaje" placeholder="Escribe tú menaje"></textarea>
-                <button class="formulario__contacto__enviar">Enviar Mensaje</button>
-            </div>
+                <div class="formcontato__input__container"> 
+                <input type="text" id="formulario__contacto__nombre" class="formulario__contacto__nombre" maxlength="40" required data-tipo="nombre" placeholder="Nombre">
+                <span class="input--error"></span>
+                </div>
+                <div class="formcontato__input__container"> 
+                <textarea name="mensaje" id="formulario__contacto__mensaje" cols="30" rows="10" class="formulario__contacto__mensaje" maxlength="120" required placeholder="Escribe tú menaje" data-tipo="mensaje"></textarea>
+                <span class="input--error"></span>
+                </div>
+                <button type="submit" class="formulario__contacto__enviar" id="formulario__contacto__enviar" disabled>Enviar Mensaje</button>
+        </form>    
+            <!--</div>-->
         </div>
     </div>
 
+<!-- PopUp envio Formulario-->
+<div class="formcontato__send" id="formcontato__send">
+    <img class="formcontato__send__img" alt="">
+    <h2 class="formcontato__send__text">El formulario ha sido enviado</h2>
+      <button class="formcontato__send__buttom" onclick="closePopUp()">Aceptar</button>
+</div>
+
 </section>
+
+
 
 <section>
     <!--Footer-->
@@ -140,5 +143,8 @@
     </section>
 
 </section>
+<script src="js/popup.js"></script>
+
+
 </body>
 </html>

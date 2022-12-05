@@ -1,0 +1,115 @@
+{
+  "Usuario": [
+    {
+      "nombre": "Jorge Marino",
+      "email": "jorge@alura.com",
+      "password": "admin"
+    }
+  ],
+  "Productos": [
+    {
+      "nombre": "Producto",
+      "categoria": "starwars",
+      "imagen": "/assets/starwars/starwars1.png",
+      "precio": 60.00,
+      "descripcion": "Prueba de comprension lectora con Star Wars",
+      "id": "0003aae5-7543-6de4-f115-1b067a704106"
+    },
+    {
+      "nombre": "Producto XYZ",
+      "categoria": "starwars",
+      "imagen": "./assets/starwars/starwars5.png",
+      "precio": 60.00,
+      "descripcion": " ",
+      "id": "0003aae5-7543-6de4-f115-1b067a704110"
+    },
+    {
+      "nombre": "Control y consolas XYZ",
+      "imagen": "./assets/consolas/consola2.png",
+      "precio": 60.00,
+      "categoria": "consolas",
+      "descripcion": " ",
+      "id": "0003aae5-7543-6de4-f115-1b067a704120"
+    },
+    {
+      "nombre": "consolas XYZ",
+      "imagen": "./assets/consolas/consola3.png",
+      "precio": 60.00,
+      "categoria": "consolas",
+      "descripcion": " ",
+      "id": "0003aae5-7543-6de4-f115-1b067a704113"
+    },
+    {
+      "nombre": "Control XYZ",
+      "imagen": "./assets/consolas/consola4.png",
+      "precio": 60.00,
+      "categoria": "consolas",
+      "descripcion": "Prueba",
+      "id": "0003aae5-7543-6de4-f115-1b067a704114"
+    },
+    {
+      "nombre": "consolas XYZ",
+      "imagen": "./assets/consolas/consola5.png",
+      "precio": 60.00,
+      "categoria": "consolas",
+      "descripcion": " ",
+      "id": "0003aae5-7543-6de4-f115-1b067a704115"
+    },
+    {
+      "nombre": "GameBoy Color",
+      "imagen": "./assets/consolas/consola6.png",
+      "precio": 60.00,
+      "categoria": "consolas",
+      "descripcion": "Prueba",
+      "id": "0003aae5-7543-6de4-f115-1b067a704117"
+    },
+    {
+      "nombre": "Camisa Atari",
+      "imagen": "./assets/diversos/diverso1.png",
+      "precio": 60.00,
+      "categoria": "diversos",
+      "descripcion": " ",
+      "id": "0003aae5-7543-6de4-f115-1b067a704118"
+    },
+    {
+      "nombre": "Camisa SNES",
+      "imagen": "./assets/diversos/diverso2.png",
+      "precio": 60.00,
+      "categoria": "diversos",
+      "descripcion": " ",
+      "id": "0003aae5-7543-6de4-f115-1b067a704119"
+    },
+    {
+      "nombre": "Control y consolas XYZ",
+      "imagen": "./assets/diversos/diverso3.png",
+      "precio": 60.00,
+      "categoria": "diversos",
+      "descripcion": "Prueba",
+      "id": "0003aae5-7543-6de4-f115-1b067a704121"
+    },
+    {
+      "nombre": "Control y consolas XYZ",
+      "imagen": "./assets/diversos/diverso4.png",
+      "precio": 60.00,
+      "categoria": "diversos",
+      "descripcion": " ",
+      "id": "0003aae5-7543-6de4-f115-1b067a704122"
+    },
+    {
+      "nombre": "Control y consolas XYZ",
+      "imagen": "./assets/diversos/diverso5.png",
+      "precio": 60.00,
+      "categoria": "diversos",
+      "descripcion": " ",
+      "id": "0003aae5-7543-6de4-f115-1b067a704123"
+    },
+    {
+      "nombre": "Producto XYZ",
+      "imagen": "./assets/diversos/diverso6.png",
+      "precio": 60.00,
+      "categoria": "diversos",
+      "descripcion": "Prueba",
+      "id": "0003aae5-7543-6de4-f115-1b067a704116"
+    }
+  ]
+}

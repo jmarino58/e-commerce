@@ -8,6 +8,7 @@
     
     <link rel="stylesheet" type="text/css" href="/css/style.css">
     <link rel="stylesheet" type="text/css" href="/css/productos.css">
+    <script type="module" src="./js/listarProducto_Administrador.js"></script>
 </head>
 <body>
 <section>
@@ -19,7 +20,7 @@
         <i  class="fa fa-search encabezado__buscador__imagen"></i>
         </div>
         
-        <button type="submit" class="encabezado__login">Login</button>
+        <button type="submit" class="encabezado__login" onclick="window.location.href='index.html'">Log Out</button>
     </div>
 </section>
 
@@ -28,30 +29,12 @@
     <div class="galeria">
         <div class="galeria__encabezado">
         <h2 class="galeria__titulo">Todos los Productos</h2>
-            <buttom  class="galeria__listado__boton">Agregar</buttom>
+            <buttom  class="galeria__listado__boton" id="galeria__listado__boton" onclick="agregarProducto()">Agregar</buttom>
             
     </div>
         <div class="galeria__cuerpo">
             <ul class="galeria__listaproductos">
-                <li class="galeria__listaproductos__item"><label class="galeria__listaproductos__item--nombre">Producto XYZ</label><div class="imagenes"><img src="/assets/starwars/starwars1.png"/><div class="iconos"><i class="fa fa-trash"></i><i class="fa fa-pencil"></i></div></div><label for="" class="galeria__listaproductos__item--precio">$60.00</label><a class="galeria__listaproductos__item--descripcion">Ver producto</a></li>
-                <li class="galeria__listaproductos__item"><label class="galeria__listaproductos__item--nombre">Producto XYZ</label><div class="imagenes"><img src="/assets/starwars/starwars2.png"/><div class="iconos"><i class="fa fa-trash"></i><i class="fa fa-pencil"></i></div></div><label for="" class="galeria__listaproductos__item--precio">$60.00</label><a class="galeria__listaproductos__item--descripcion">Ver producto</a></li>
-                <li class="galeria__listaproductos__item"><label class="galeria__listaproductos__item--nombre">Producto XYZ</label><div class="imagenes"><img src="/assets/starwars/starwars3.png"/><div class="iconos"><i class="fa fa-trash"></i><i class="fa fa-pencil"></i></div></div><label for="" class="galeria__listaproductos__item--precio">$60.00</label><a class="galeria__listaproductos__item--descripcion">Ver producto</a></li>
-                <li class="galeria__listaproductos__item"><label class="galeria__listaproductos__item--nombre">Producto XYZ</label><div class="imagenes"><img src="/assets/starwars/starwars4.png"/><div class="iconos"><i class="fa fa-trash"></i><i class="fa fa-pencil"></i></div></div><label for="" class="galeria__listaproductos__item--precio">$60.00</label><a class="galeria__listaproductos__item--descripcion">Ver producto</a></li>
-                <li class="galeria__listaproductos__item"><label class="galeria__listaproductos__item--nombre">Producto XYZ</label><div class="imagenes"><img src="/assets/starwars/starwars5.png"/><div class="iconos"><i class="fa fa-trash"></i><i class="fa fa-pencil"></i></div></div><label for="" class="galeria__listaproductos__item--precio">$60.00</label><a class="galeria__listaproductos__item--descripcion">Ver producto</a></li>
-                <li class="galeria__listaproductos__item"><label class="galeria__listaproductos__item--nombre">Producto XYZ</label><div class="imagenes"><img src="/assets/starwars/starwars6.png"/><div class="iconos"><i class="fa fa-trash"></i><i class="fa fa-pencil"></i></div></div><label for="" class="galeria__listaproductos__item--precio">$60.00</label><a class="galeria__listaproductos__item--descripcion">Ver producto</a></li>
-                <li class="galeria__listaproductos__item"><label class="galeria__listaproductos__item--nombre">Control XYZ</label><div class="imagenes"><img src="/assets/consolas/consola1.png"/><div class="iconos"><i class="fa fa-trash"></i><i class="fa fa-pencil"></i></div></div><label for="" class="galeria__listaproductos__item--precio">$60.00</label><a class="galeria__listaproductos__item--descripcion">Ver producto</a></li>
-                <li class="galeria__listaproductos__item"><label class="galeria__listaproductos__item--nombre">Control y consola XYZ</label><div class="imagenes"><img src="/assets/consolas/consola2.png"/><div class="iconos"><i class="fa fa-trash"></i><i class="fa fa-pencil"></i></div></div><label for="" class="galeria__listaproductos__item--precio">$ 60.00</label><a class="galeria__listaproductos__item--descripcion">Ver producto</a></li>
-                <li class="galeria__listaproductos__item"><label class="galeria__listaproductos__item--nombre">Consola XYZ</label><div class="imagenes"><img src="/assets/consolas/consola3.png"/><div class="iconos"><i class="fa fa-trash"></i><i class="fa fa-pencil"></i></div></div><label for="" class="galeria__listaproductos__item--precio">$ 60.00</label><a class="galeria__listaproductos__item--descripcion">Ver producto</a></li>
-                <li class="galeria__listaproductos__item"><label class="galeria__listaproductos__item--nombre">Control XYZ</label><div class="imagenes"><img src="/assets/consolas/consola4.png"/><div class="iconos"><i class="fa fa-trash"></i><i class="fa fa-pencil"></i></div></div><label for="" class="galeria__listaproductos__item--precio">$ 60.00</label><a class="galeria__listaproductos__item--descripcion">Ver producto</a></li>
-                <li class="galeria__listaproductos__item"><label class="galeria__listaproductos__item--nombre">Consola XYZ</label><div class="imagenes"><img src="/assets/consolas/consola5.png"/><div class="iconos"><i class="fa fa-trash"></i><i class="fa fa-pencil"></i></div></div><label for="" class="galeria__listaproductos__item--precio">$ 60.00</label><a class="galeria__listaproductos__item--descripcion">Ver producto</a></li>
-                <li class="galeria__listaproductos__item"><label class="galeria__listaproductos__item--nombre">GameBoy Color</label><div class="imagenes"><img src="/assets/consolas/consola6.png"/><div class="iconos"><i class="fa fa-trash"></i><i class="fa fa-pencil"></i></div></div><label for="" class="galeria__listaproductos__item--precio">$ 60.00</label><a class="galeria__listaproductos__item--descripcion">Ver producto</a></li>
-                <li class="galeria__listaproductos__item"><label class="galeria__listaproductos__item--nombre">Camisa Atari</label><div class="imagenes"><img src="/assets/diversos/diverso1.png"/><div class="iconos"><i class="fa fa-trash"></i><i class="fa fa-pencil"></i></div></div><label for="" class="galeria__listaproductos__item--precio">$ 60.00</label><a  class="galeria__listaproductos__item--descripcion">Ver producto</a></li>
-                <li class="galeria__listaproductos__item"><label class="galeria__listaproductos__item--nombre">Camisa SNES</label><div class="imagenes"><img src="/assets/diversos/diverso2.png"/><div class="iconos"><i class="fa fa-trash"></i><i class="fa fa-pencil"></i></div></div><label for="" class="galeria__listaproductos__item--precio">$ 60.00</label><a class="galeria__listaproductos__item--descripcion">Ver producto</a></li>
-                <li class="galeria__listaproductos__item"><label class="galeria__listaproductos__item--nombre">Control y Consola XYZ</label><div class="imagenes"><img src="/assets/diversos/diverso3.png"/><div class="iconos"><i class="fa fa-trash"></i><i class="fa fa-pencil"></i></div></div><label for="" class="galeria__listaproductos__item--precio">$ 60.00</label><a class="galeria__listaproductos__item--descripcion">Ver producto</a></li>
-                <li class="galeria__listaproductos__item"><label class="galeria__listaproductos__item--nombre">Control y Consola XYZ</label><div class="imagenes"><img src="/assets/diversos/diverso4.png"/><div class="iconos"><i class="fa fa-trash"></i><i class="fa fa-pencil"></i></div></div><label for="" class="galeria__listaproductos__item--precio">$ 60.00</label><a class="galeria__listaproductos__item--descripcion">Ver producto</a></li>
-                <li class="galeria__listaproductos__item"><label class="galeria__listaproductos__item--nombre">Control y Consola XYZ</label><div class="imagenes"><img src="/assets/diversos/diverso5.png"/><div class="iconos"><i class="fa fa-trash"></i><i class="fa fa-pencil"></i></div></div><label for="" class="galeria__listaproductos__item--precio">$ 60.00</label><a class="galeria__listaproductos__item--descripcion">Ver producto</a></li>
-                <li class="galeria__listaproductos__item"><label class="galeria__listaproductos__item--nombre">Producto XYZ</label><div class="imagenes"><img src="/assets/diversos/diverso6.png"/><div class="iconos"><i class="fa fa-trash"></i><i class="fa fa-pencil"></i></div></div><label for="" class="galeria__listaproductos__item--precio">$ 60.00</label><a class="galeria__listaproductos__item--descripcion">Ver producto</a></li>
-           </ul>
+            </ul>
         </div>   
     </div>    
 </section>
@@ -114,4 +97,5 @@
 
 </section>
 </body>
+<script src="./js/agregarProducto.js"></script>
 </html>
